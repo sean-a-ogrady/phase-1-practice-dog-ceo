@@ -17,7 +17,7 @@ fetch("https://dog.ceo/api/breeds/list/all")
             const newLi = document.createElement("li");
             newLi.textContent = breed[0].toUpperCase() + breed.slice(1);
             newLi.addEventListener('click', () => {
-                if (newLi.style.color !== 'blue') newLi.style.color = 'blue';
+                if (newLi.style.color !== 'lightgreen') newLi.style.color = 'lightgreen';
                 else newLi.style.color = '';
             });
             dogBreedsContainer.appendChild(newLi);
